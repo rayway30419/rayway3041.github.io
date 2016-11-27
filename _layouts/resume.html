@@ -45,20 +45,60 @@
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <h3 class="resume-item-title" itemprop="name">Kdan Mobile Software Ltd.</h3>
           <h4 class="resume-item-details" itemprop="description">Cloud Platform Engineer &bull; Oct, 2015 &mdash; Present</h4>
-          <p class="resume-item-copy">Developing and operating backend service on Amazon Web Service. </p>
-          <ul class="resume-item-list">
-            <li>Notification Service:</li>
-              <ul>Migrate old architecture from Parse.</ul>
-              <ul>Collecting device infomation on cross-platform apps.</ul>
-              <ul>Sending push notifications.</ul>
-
-            <li>Migrating online shop to rails</li>
-              <ul>Payment: Stripe</ul>
+          <ul>
+            <li>Developing backend service with Ruby on Rails.</li>
+          </ul>
+          <ul>
+            <li>Migrate notification service architecture from Parse to AWS.
+              <ul>
+                <li>Collecting device infomation in AWS DynamoDB.</li>
+                <li>Sending push notifications by AWS SNS</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>Migrating online shop from woocommerce to rails</li>
+              <ul><li>Payment: Stripe</li></ul>
+          </ul>
+          <ul>
+            <li>Building simple front-end management console.</li>
           </ul>
         </div><!-- end of resume-item -->
 
       </section>
       <!-- end Experience -->
+      {% endif %}
+
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Backend</h4>
+          <li class="resume-item-copy">Exprienced 1+ years with Ruby on Rails.</li>
+          <li class="resume-item-copy">Background Job: Sidekiq</li>
+          <li class="resume-item-copy">Deployment: Capistrano</li>
+          <li class="resume-item-copy">Testing Tool: Rspec (few)</li>
+        </div>
+        
+        <div class="resume-item">
+          <h4 class="resume-item-details">Frontend</h4>
+          <li class="resume-item-copy">Familiar with Angular 1 and bootstrap 3 for making simple management console.</li>
+          <li class="resume-item-copy">Interested in Vue.js.</li>
+        </div>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Operation</h4>
+          <li class="resume-item-copy">Exprienced 1+ years with Amazon Web Service.</li>
+          <li class="resume-item-copy">Log Monitoring with EFK + New Relic</li>
+          <li class="resume-item-copy">Alarm System: Sentry and CloudWatch + SNS + Lambda + Slack</li>
+        </div>
+      </section>
+      <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_education %}
@@ -78,38 +118,6 @@
 
       </section>
       <!-- end Education -->
-      {% endif %}
-
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Backend</h4>
-          <p class="resume-item-copy">Exprienced 1+ years with Ruby on Rails.</p>
-          <p class="resume-item-copy">Background Job: Sidekiq</p>
-          <p class="resume-item-copy">Deployment: Capistrano</p>
-          <p class="resume-item-copy">Testing Tool: Rspec (few)</p>
-        </div>
-        
-        <div class="resume-item">
-          <h4 class="resume-item-details">Frontend</h4>
-          <p class="resume-item-copy">Familiar with Angular 1 and bootstrap 3 for making simple management console.</p>
-          <p class="resume-item-copy">Interested in Vue.js.</p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Operation</h4>
-          <p class="resume-item-copy">Exprienced 1+ years with Amazon Web Service.</p>
-          <p class="resume-item-copy">Log Monitoring with EFK + New Relic</p>
-          <p class="resume-item-copy">Alarm System: Sentry and CloudWatch + SNS + Lambda + Slack</p>
-        </div>
-      </section>
-      <!-- end Skills -->
       {% endif %}
 
       {% if site.resume_section_links %}
@@ -135,15 +143,23 @@
       <!-- begin Associations -->
       <section class="content-section">
         <header class="section-header">
-          <h2>External links</h2>
+          <h2>Blog</h2>
         </header>
         <div class="resume-item">
           <p class="resume-item"><a href="https://medium.com/@RayWay">My medium</a></p>
-          <p class="resume-item">Contact me: rayway30419@gmail.com</p>
         </div>
       </section>
       <!-- end Associations -->
       {% endif %}
+
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Contact Me</h2>
+        </header>
+        <div class="resume-item">
+          <p class="resume-item">rayway30419@gmail.com</p>
+        </div>
+      </section>
 
 
       <footer class="page-footer">
